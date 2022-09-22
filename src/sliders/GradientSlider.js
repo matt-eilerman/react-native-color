@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
-import { Slider } from 'react-native-range-slider-expo';
+import Slider from 'react-native-sliders';
 
 const GradientSlider = ({
   style,
@@ -12,13 +12,22 @@ const GradientSlider = ({
   onValueChange,
   thumbTintColor
 }) => {
-  console.log('maximumValue', maximumValue)
-  console.log('value', value)
-  console.log('step', step)
   return (
     <View style={[styles.container, style]}>
       <View style={styles.gradient}>{gradient}</View>
       <Slider
+        value={value}
+        step={step}
+        animateTransitions
+        animationType="spring"
+        thumbTouchSize={{ width: 48, height: 48 }}
+        maximumValue={maximumValue}
+        onValueChange={onValueChange}
+        minimumTrackTintColor="transparent"
+        maximumTrackTintColor="transparent"
+        thumbStyle={[styles.thumb, { backgroundColor: thumbTintColor }]}
+      />
+      {/* <Slider
         min={1}
         max={maximumValue}
         valueOnChange={onValueChange}
@@ -28,7 +37,7 @@ const GradientSlider = ({
         outOfRangeBarColor="transparent"
         knobColor={[styles.thumb, { backgroundColor: thumbTintColor }]}
         showValueLabels={false}
-      />
+      /> */}
     </View>
   );
 };

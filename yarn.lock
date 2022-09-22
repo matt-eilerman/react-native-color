@@ -177,15 +177,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.0:
-  version "15.6.0"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
-  dependencies:
-    fbjs "^0.8.16"
-    loose-envify "^1.3.1"
-    object-assign "^4.1.1"
-
-prop-types@^15.7.2:
+prop-types@^15.5.6, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -193,6 +185,14 @@ prop-types@^15.7.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+prop-types@^15.6.0:
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.3.1"
+    object-assign "^4.1.1"
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -213,6 +213,13 @@ react-native-range-slider-expo@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/react-native-range-slider-expo/-/react-native-range-slider-expo-1.4.3.tgz#d21baab8820d8827992b94d881868d634337de0c"
   integrity sha512-EAIXfuCxJYffi6yqOcmCMWzvPNRSJ7zgDhQtVXXe2fokYaXVLG1uq2jM+cpTStMusIIGIo9HGZAja94N+rnNyg==
+
+react-native-sliders@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-sliders/-/react-native-sliders-2.0.2.tgz#feb53bc3d80f42d74d2c6fa36cdeec092fc92c60"
+  integrity sha512-1P4P2+bS7qDWo2UmcrcMjniLIV3ZlXREzwV+/DWMsMULuIaZjfFo2JPAfd6Sk15WkHUotc8r5TobqZfRmi4eag==
+  dependencies:
+    prop-types "^15.5.6"
 
 react-native-svg@12.1.0:
   version "12.1.0"
