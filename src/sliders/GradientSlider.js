@@ -26,6 +26,8 @@ const GradientSlider = ({
         // minimumTrackTintColor="transparent"
         // maximumTrackTintColor="transparent"
         knobColor={thumbTintColor}
+        showValueLabels={false}
+        showRangeLabels={false}
       />
     </View>
   );
