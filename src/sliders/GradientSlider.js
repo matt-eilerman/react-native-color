@@ -15,7 +15,6 @@ const GradientSlider = ({
   console.log('maximumValue', maximumValue)
   console.log('value', value)
   console.log('step', step)
-  console.log('maximumValue', maximumValue)
   return (
     <View style={[styles.container, style]}>
       <View style={styles.gradient}>{gradient}</View>
@@ -26,7 +25,8 @@ const GradientSlider = ({
         initialValue={value}
         step={step}
         inRangeBarColor="transparent"
-        knobColor={thumbTintColor}
+        outOfRangeBarColor="transparent"
+        knobColor={[styles.thumb, { backgroundColor: thumbTintColor }]}
         showValueLabels={false}
       />
     </View>
@@ -40,6 +40,21 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'stretch',
+  },
+   thumb: {
+    width: 24,
+    height: 24,
+    borderRadius: 24 / 2,
+    shadowColor: 'black',
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+    shadowOpacity: 0.1
+  },
+  gradient: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    height: 6,
   },
 });
 
