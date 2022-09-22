@@ -27,17 +27,6 @@ const GradientSlider = ({
         maximumTrackTintColor="transparent"
         thumbStyle={[styles.thumb, { backgroundColor: thumbTintColor }]}
       />
-      {/* <Slider
-        min={1}
-        max={maximumValue}
-        valueOnChange={onValueChange}
-        initialValue={value}
-        step={step}
-        inRangeBarColor="transparent"
-        outOfRangeBarColor="transparent"
-        knobColor={[styles.thumb, { backgroundColor: thumbTintColor }]}
-        showValueLabels={false}
-      /> */}
     </View>
   );
 };
