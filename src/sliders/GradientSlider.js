@@ -16,17 +16,14 @@ const GradientSlider = ({
     <View style={[styles.container, style]}>
       <View style={styles.gradient}>{gradient}</View>
       <Slider
-        initialValue={value}
-        step={step}
-        // animateTransitions
-        // animationType="spring"
         min={1}
         max={maximumValue}
         valueOnChange={onValueChange}
+        initialValue={value}
+        step={step}
         inRangeBarColor="transparent"
         knobColor={thumbTintColor}
         showValueLabels={false}
-        showRangeLabels={false}
       />
     </View>
   );
