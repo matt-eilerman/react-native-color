@@ -18,14 +18,14 @@ const GradientSlider = ({
       <Slider
         value={value}
         step={step}
-        animateTransitions
-        animationType="spring"
-        thumbTouchSize={{ width: 48, height: 48 }}
-        maximumValue={maximumValue}
-        onValueChange={onValueChange}
-        minimumTrackTintColor="transparent"
-        maximumTrackTintColor="transparent"
-        thumbStyle={[styles.thumb, { backgroundColor: thumbTintColor }]}
+        // animateTransitions
+        // animationType="spring"
+        // thumbTouchSize={{ width: 48, height: 48 }}
+        max={maximumValue}
+        valueOnChange={onValueChange}
+        // minimumTrackTintColor="transparent"
+        // maximumTrackTintColor="transparent"
+        // thumbStyle={[styles.thumb, { backgroundColor: thumbTintColor }]}
       />
     </View>
   );
