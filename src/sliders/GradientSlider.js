@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import PropTypes from 'prop-types';
-import Slider from 'react-native-slider';
+import Slider from 'react-native-range-slider-expo';
 
 const GradientSlider = ({
   style,
@@ -16,7 +16,7 @@ const GradientSlider = ({
     <View style={[styles.container, style]}>
       <View style={styles.gradient}>{gradient}</View>
       <Slider
-        value={value}
+        initialValue={value}
         step={step}
         // animateTransitions
         // animationType="spring"
