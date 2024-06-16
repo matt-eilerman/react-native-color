@@ -25,7 +25,7 @@ const GradientSlider = ({
         onValueChange={onValueChange}
         minimumTrackTintColor="transparent"
         maximumTrackTintColor="transparent"
-        thumbStyle={[styles.thumb, { backgroundColor: thumbTintColor }]}
+        thumbStyle={{ ...styles.thumb, backgroundColor: thumbTintColor }}
       />
     </View>
   );
